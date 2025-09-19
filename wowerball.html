@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wowerball - Enter Your Lucky Numbers!</title>
+    <link rel="stylesheet" href="wowerball.css">
+</head>
+<body>
+    <div class="sparkles"></div>
+    <div class="container">
+        <header>
+            <h1 class="logo">🎰 WOWERBALL 🎰</h1>
+            <p class="tagline">Your Lucky Numbers Await!</p>
+        </header>
+        
+        <main>
+            <div class="jackpot-banner">
+                <h2>💰 MEGA JACKPOT 💰</h2>
+                <p class="jackpot-amount">$999,999,999</p>
+            </div>
+            
+            <div class="instructions">
+                <h3>🌟 Enter Your Lucky Numbers Here for a Chance to Win! 🌟</h3>
+                <p>Pick 9 numbers between 1-99 and let destiny decide your fortune!</p>
+            </div>
+            
+            <form id="lotteryForm" class="lottery-form">
+                <div class="numbers-container">
+                    <div class="number-group">
+                        <label>Lucky Numbers (1-99):</label>
+                        <div class="number-inputs">
+                            <input type="number" class="number-input" min="1" max="99" required>
+                            <input type="number" class="number-input" min="1" max="99" required>
+                            <input type="number" class="number-input" min="1" max="99" required>
+                            <input type="number" class="number-input" min="1" max="99" required>
+                            <input type="number" class="number-input" min="1" max="99" required>
+                            <input type="number" class="number-input" min="1" max="99" required>
+                            <input type="number" class="number-input" min="1" max="99" required>
+                            <input type="number" class="number-input" min="1" max="99" required>
+                            <input type="number" class="number-input" min="1" max="99" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-info">
+                    <input type="text" id="playerName" placeholder="Enter Your Name" required>
+                    <input type="email" id="playerEmail" placeholder="Enter Your Email" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    ✨ SUBMIT YOUR LUCKY NUMBERS! ✨
+                </button>
+                
+                <p class="disclaimer">* For entertainment purposes only. Good luck! 🍀</p>
+            </form>
+            
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">🎯</span>
+                    <h4>Pick Your Numbers</h4>
+                    <p>Choose 9 lucky numbers</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">⚡</span>
+                    <h4>Instant Entry</h4>
+                    <p>Fast & easy submission</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🏆</span>
+                    <h4>Win Big</h4>
+                    <p>Massive jackpot awaits</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="wowerball.js"></script>
+</body>
+</html>
