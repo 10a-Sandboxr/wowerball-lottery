@@ -147,48 +147,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         document.body.insertAdjacentHTML('beforeend', successHTML);
     }
-    
-    // Add random number generator button
-    const randomBtn = document.createElement('button');
-    randomBtn.type = 'button';
-    randomBtn.className = 'random-btn';
-    randomBtn.innerHTML = '🎲 QUICK PICK (Random Numbers) 🎲';
-    randomBtn.style.cssText = `
-        width: 100%;
-        padding: 15px;
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: #fff;
-        background: linear-gradient(45deg, #32cd32, #00ff00);
-        border: none;
-        border-radius: 25px;
-        cursor: pointer;
-        margin-bottom: 20px;
-        transition: all 0.3s ease;
-        box-shadow: 0 5px 15px rgba(50,205,50,0.4);
-    `;
-    
-    randomBtn.addEventListener('click', function() {
-        const usedNumbers = new Set();
-        numberInputs.forEach(input => {
-            let randomNum;
-            do {
-                randomNum = Math.floor(Math.random() * 99) + 1;
-            } while (usedNumbers.has(randomNum));
-            
-            usedNumbers.add(randomNum);
-            input.value = randomNum;
-            
-            // Add animation
-            input.style.animation = 'none';
-            setTimeout(() => {
-                input.style.animation = 'pulse 0.5s ease-in-out';
-            }, Math.random() * 500);
-        });
-    });
-    
-    // Insert random button before submit button
-    form.insertBefore(randomBtn, document.querySelector('.submit-btn'));
 });
 
 // Add CSS animation for success message
